@@ -14,9 +14,11 @@
     position: relative;
     overflow: hidden;
     background-color: #fff;
+    border-radius: 20px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     max-width: 900px;
     margin: 20px auto;
+    padding: 2%;
 }
 
 .map__image {
@@ -86,21 +88,25 @@
     }
 
 }
-
-
 /*====================== FIN SECTION MAP ========================= */
+
 
 /* ========================= SECTION FORMAT MISSION PARALLAX CARD ========================= */
 
 h1{
     font-size: 2rem;
+    font-weight: bolder;
     font-family: 'Montserrat';
     font-weight: normal;
     color: #444;
     text-align: center;
     margin: 2rem 0;
+    padding-top: 2%;
 }
 
+p{
+    text-align: justify;
+}
 
 span{
     font-size: 1rem;
@@ -113,6 +119,12 @@ span{
     max-width: 80rem;
 }
 
+.wrapper-bg{
+    background-color: #fff;
+    padding-bottom: 5%;
+    border-radius: 20px;
+}
+
 
 .front-mixte{
     background-image: url("../images/mixte.png");
@@ -123,11 +135,10 @@ span{
 }
 
 .front-distanciel{
-    background-image:url('../images/distanc.png');
+    background-image:url('../images/distanciel.png');
 }
 
 .cols{
-    gap: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -135,8 +146,13 @@ span{
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
+        justify-content: center;
+}
 
-            justify-content: center;
+.cols-format{
+    gap: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .col{
@@ -449,7 +465,7 @@ span{
 }
 
 }
-/* FIN CODE FORMATS MISSIONS EFFET PARALLAX CARD */
+/* FIN SECTION ACCUEIL PUZZLE */
 
 /* CSS SECTION RESULTAT */
 /* html,
@@ -485,3 +501,184 @@ body {
     z-index: 2;
     color: gray;
 }
+
+/* SECTION PUZZLE RESULTAT ASSO */
+
+.puzzle-final{
+    background-color: #ffff;
+    margin-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 20px;
+    border-color: #444;
+}
+
+.info-asso{
+    padding-left: 5%;
+    text-align: center;
+}
+
+.result{
+    text-align: center;
+}
+
+.cols-result{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+html .puzzle_wrapper:hover:before, body .puzzle_wrapper:hover:before, html .puzzle_wrapper:hover:after, body .puzzle_wrapper:hover:after {
+  z-index: 4;
+  opacity: 1;
+}
+html .puzzle_wrapper:hover .puzzle_1, body .puzzle_wrapper:hover .puzzle_1 {
+  transform: translatex(25px) translatey(25px);
+}
+html .puzzle_wrapper:hover .puzzle_2, body .puzzle_wrapper:hover .puzzle_2 {
+  transform: rotate(90deg) translatex(25px) translatey(25px);
+}
+html .puzzle_wrapper:hover .puzzle_3, body .puzzle_wrapper:hover .puzzle_3 {
+  transform: rotate(-90deg) translatex(25px) translatey(25px);
+}
+html .puzzle_wrapper:hover .puzzle_4, body .puzzle_wrapper:hover .puzzle_4 {
+  transform: rotate(180deg) translatex(25px) translatey(25px);
+}
+html .puzzle_wrapper .puzzle_1, body .puzzle_wrapper .puzzle_1 {
+  background-color: #E9041E;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+html .puzzle_wrapper .puzzle_1:after, body .puzzle_wrapper .puzzle_1:after, html .puzzle_wrapper .puzzle_1:before, body .puzzle_wrapper .puzzle_1:before {
+  background-color: #E9041E;
+  top: 190px;
+  left: 75px;
+}
+html .puzzle_wrapper .puzzle_1:before, body .puzzle_wrapper .puzzle_1:before {
+  top: calc(50% - 20px);
+  left: 190px;
+  background-color: #E9041E;
+  transform: rotate(-90deg);
+}
+html .puzzle_wrapper .puzzle_2, body .puzzle_wrapper .puzzle_2 {
+  background-color: #000000;
+  top: 0px;
+  left: 250px;
+  transform: rotate(90deg);
+}
+html .puzzle_wrapper .puzzle_2:after, body .puzzle_wrapper .puzzle_2:after, html .puzzle_wrapper .puzzle_2:before, body .puzzle_wrapper .puzzle_2:before {
+  background-color: #ecf0f1;
+  top: 200px;
+  left: 40px;
+}
+html .puzzle_wrapper .puzzle_2:before, body .puzzle_wrapper .puzzle_2:before {
+  top: calc(50% - 20px);
+  left: 160px;
+  transform: rotate(90deg);
+}
+html .puzzle_wrapper .puzzle_2:after, body .puzzle_wrapper .puzzle_2:after {
+  top: 160px;
+  left: calc(50% - 20px);
+  transform: rotate(180deg);
+}
+html .puzzle_wrapper .puzzle_3, body .puzzle_wrapper .puzzle_3 {
+  background-color: #010035;
+  top: 250px;
+  left: 0;
+  z-index: 2;
+  transform: rotate(-90deg);
+}
+html .puzzle_wrapper .puzzle_3:after, body .puzzle_wrapper .puzzle_3:after, html .puzzle_wrapper .puzzle_3:before, body .puzzle_wrapper .puzzle_3:before {
+  background-color: #010035;
+  top: 190px;
+  left: 75px;
+}
+html .puzzle_wrapper .puzzle_3:before, body .puzzle_wrapper .puzzle_3:before {
+  top: calc(50% - 25px);
+  left: 160px;
+  background-color: #ecf0f1;
+  transform: rotate(90deg);
+}
+html .puzzle_wrapper .puzzle_4, body .puzzle_wrapper .puzzle_4 {
+  background-color: #E9041E;
+  top: 250px;
+  left: 250px;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+html .puzzle_wrapper .puzzle_4:after, body .puzzle_wrapper .puzzle_4:after, html .puzzle_wrapper .puzzle_4:before, body .puzzle_wrapper .puzzle_4:before {
+  background-color: #E9041E;
+  top: 190px;
+  left: 80px;
+}
+html .puzzle_wrapper .puzzle_4:before, body .puzzle_wrapper .puzzle_4:before {
+  top: calc(50% - 25px);
+  left: 160px;
+  background-color: #ecf0f1;
+  transform: rotate(90deg);
+}
+@keyframes circle {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 0.95;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+html .puzzle, html .puzzle_wrapper .puzzle_1, html body .puzzle_wrapper .puzzle_1, body .puzzle_wrapper html .puzzle_1, html .puzzle_wrapper .puzzle_2, html body .puzzle_wrapper .puzzle_2, body .puzzle_wrapper html .puzzle_2, html .puzzle_wrapper .puzzle_3, html body .puzzle_wrapper .puzzle_3, body .puzzle_wrapper html .puzzle_3, html .puzzle_wrapper .puzzle_4, html body .puzzle_wrapper .puzzle_4, body .puzzle_wrapper html .puzzle_4, body .puzzle, body html .puzzle_wrapper .puzzle_1, html .puzzle_wrapper body .puzzle_1, body .puzzle_wrapper .puzzle_1, body html .puzzle_wrapper .puzzle_2, html .puzzle_wrapper body .puzzle_2, body .puzzle_wrapper .puzzle_2, body html .puzzle_wrapper .puzzle_3, html .puzzle_wrapper body .puzzle_3, body .puzzle_wrapper .puzzle_3, body html .puzzle_wrapper .puzzle_4, html .puzzle_wrapper body .puzzle_4, body .puzzle_wrapper .puzzle_4 {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50% 0 0 0;
+    box-shadow: 0px 0px 20px -5px black;
+    transition: all 0.3s ease;
+}
+
+html .puzzle:after, html .puzzle_wrapper .puzzle_1:after, html body .puzzle_wrapper .puzzle_1:after, body .puzzle_wrapper html .puzzle_1:after, html .puzzle_wrapper .puzzle_2:after, html body .puzzle_wrapper .puzzle_2:after, body .puzzle_wrapper html .puzzle_2:after, html .puzzle_wrapper .puzzle_3:after, html body .puzzle_wrapper .puzzle_3:after, body .puzzle_wrapper html .puzzle_3:after, html .puzzle_wrapper .puzzle_4:after, html body .puzzle_wrapper .puzzle_4:after, body .puzzle_wrapper html .puzzle_4:after, body .puzzle:after, body html .puzzle_wrapper .puzzle_1:after, html .puzzle_wrapper body .puzzle_1:after, body .puzzle_wrapper .puzzle_1:after, body html .puzzle_wrapper .puzzle_2:after, html .puzzle_wrapper body .puzzle_2:after, body .puzzle_wrapper .puzzle_2:after, body html .puzzle_wrapper .puzzle_3:after, html .puzzle_wrapper body .puzzle_3:after, body .puzzle_wrapper .puzzle_3:after, body html .puzzle_wrapper .puzzle_4:after, html .puzzle_wrapper body .puzzle_4:after, body .puzzle_wrapper .puzzle_4:after, html .puzzle:before, html .puzzle_wrapper .puzzle_1:before, html body .puzzle_wrapper .puzzle_1:before, body .puzzle_wrapper html .puzzle_1:before, html .puzzle_wrapper .puzzle_2:before, html body .puzzle_wrapper .puzzle_2:before, body .puzzle_wrapper html .puzzle_2:before, html .puzzle_wrapper .puzzle_3:before, html body .puzzle_wrapper .puzzle_3:before, body .puzzle_wrapper html .puzzle_3:before, html .puzzle_wrapper .puzzle_4:before, html body .puzzle_wrapper .puzzle_4:before, body .puzzle_wrapper html .puzzle_4:before, body .puzzle:before, body html .puzzle_wrapper .puzzle_1:before, html .puzzle_wrapper body .puzzle_1:before, body .puzzle_wrapper .puzzle_1:before, body html .puzzle_wrapper .puzzle_2:before, html .puzzle_wrapper body .puzzle_2:before, body .puzzle_wrapper .puzzle_2:before, body html .puzzle_wrapper .puzzle_3:before, html .puzzle_wrapper body .puzzle_3:before, body .puzzle_wrapper .puzzle_3:before, body html .puzzle_wrapper .puzzle_4:before, html .puzzle_wrapper body .puzzle_4:before, body .puzzle_wrapper .puzzle_4:before {
+  content: '';
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 0 0 50% 50%;
+  transition: all 0.3s ease;
+}
+
+html .puzzle_wrapper, body .puzzle_wrapper {
+  height: 450px;
+  width: 450px;
+  position: relative;
+  margin: 100px auto;
+}
+html .puzzle_wrapper:before, body .puzzle_wrapper:before, html .puzzle_wrapper:after, body .puzzle_wrapper:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('https://picsum.photos/id/1/200/300');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    border-radius: 50px;
+    transition: opacity 0.3s ease;
+    border-radius: 20px 0px 20px 20px;
+    box-shadow: 5px 5px 20px -5px #333;
+}
+html .puzzle_wrapper:hover, body .puzzle_wrapper:hover {
+    cursor: pointer;
+    animation: circle 0.3s ease-in 0.3s 1;
+}
+
+/* FIN CODE PUZZLE ASSSO */
