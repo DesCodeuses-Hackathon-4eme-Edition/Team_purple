@@ -351,28 +351,28 @@ span{
 	 background-image:url("/images-logos-asso/Kodiko.jpg") ;
 }
  .item-box:nth-child(2) .puzzle:before {
-	 background-image: url("/images-logos-asso/article-demain.png");
+	 background-image: url("/images-logos-asso/Article.jpg");
 }
  .item-box:nth-child(3) .puzzle:before {
-	 background-image: url("images-logos-asso/Duo.jpg");
+	 background-image: url("/images-logos-asso/Duo for.png");
 }
  .item-box:nth-child(4) .puzzle:before {
-	 background-image: url("https://unsplash.it/600/600?image=1074");
+	 background-image: url("/images-logos-asso/C'Possible.jpg");
 }
  .item-box:nth-child(5) .puzzle:before {
-	 background-image: url("https://unsplash.it/600/600?image=823");
+	 background-image: url("/images-logos-asso/Capital filles.jpg");
 }
  .item-box:nth-child(6) .puzzle:before {
-	 background-image: url("https://unsplash.it/600/600?image=64");
+	 background-image: url("/images-logos-asso/Institut de l'Engagement.png");
 }
  .item-box:nth-child(7) .puzzle:before {
-	 background-image: url("https://unsplash.it/600/600?image=65");
+	 background-image: url("/images-logos-asso/NQT.jpg");
 }
  .item-box:nth-child(8) .puzzle:before {
-	 background-image: url("https://unsplash.it/600/600?image=839");
+	 background-image: url("/images-logos-asso/Zup de co.png");
 }
  .item-box:nth-child(9) .puzzle:before {
-	 background-image: url("https://unsplash.it/600/600?image=832");
+	 background-image: url("/images-logos-asso/Proxite.png");
 }
  .item-box:hover {
 	 transform: scale(1.25, 1.25);
@@ -442,10 +442,7 @@ span{
  @keyframes init {
 	 from {
 		 transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ 
 }
 
 }
