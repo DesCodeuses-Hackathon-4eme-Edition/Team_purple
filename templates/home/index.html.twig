@@ -3,7 +3,58 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-{{ dump() }}
+
+<!-- SECTION FORMAT MISSION 
+EFFET PARALLAX - CARD -->
+
+<div class="wrapper">
+    <h1>Quel format de mission souhaiteriez-vous ?</h1>
+
+    <div class="cols">
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front front-distanciel" style="background-image: url('{{ asset('images/distanciel.png') }}')">
+						<div class="inner">
+            <span>Distanciel</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+						<p>Uniquement à distance, la digitalisation ça a du bon</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front front-presentiel">
+						<div class="inner">
+            <span>Présentiel</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>Uniquement en présentiel, le contact humain c'est plus sympa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front front-mixte">
+						<div class="inner">
+            <span>Mixte</span>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p>En toute flexibilité, je peux me déplacer mais à distance cela me convient aussi</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
 
  <h1>Trouver mon asso</h1>
     <section>
