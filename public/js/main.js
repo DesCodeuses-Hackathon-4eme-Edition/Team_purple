@@ -1,4 +1,3 @@
-
 const escapeXSS = (text) => {
     if (typeof text !== 'string') return text;
     const map = {
@@ -162,3 +161,4 @@ const displayResult = () => {
 };
 
 displayQuestion();
+
