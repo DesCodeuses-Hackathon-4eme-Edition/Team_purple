@@ -3,9 +3,9 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-{{ dump() }}
+{# {{ dump() }} #}
 
-{# <h1>Trouver mon asso</h1>
+<h1>Trouver mon asso</h1>
     <section>
         <div class="grid">
             <div class="item-box">
@@ -162,26 +162,109 @@
     <div class="zone-mode-de-travail">
     </div>
     <div class="zone-disponibilites">
+<div class="wrapper">
+<h1>Quel rythme de mission?</h1>
+<div class="cols">
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front front1">
+						<div class="inner">
+							<i class="fa-solid fa-clock-rotate-left"></i>
+						<p>Mission sur plusieurs mois.</p>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+                            <span>Pendant environ 6 mois, à raison de 4h/mois : un rdv hebdomadaire plutôt sympa </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front front2">
+						<div class="inner">
+					<i class="fa-solid fa-clock-rotate-left"></i>
+							<p>Mission rapide.</p>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+            <span>Pendant quelques mois (2 à 6) à raison de 2h/mois : de la flexibilité pour m'engager </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front front1">
+						<div class="inner">
+							<i class="fa-solid fa-clock-rotate-left"></i>
+						<p>Mission sur plusieurs mois.</p>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+                            <span>Sur toute une année scolaire, à raison d'1h-2h/mois : la continuité c'est la clé </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front front2">
+						<div class="inner">
+							<i class="fa-solid fa-clock-rotate-left"></i>
+						<p>Mission rapide.</p>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+                            <span>Pour 6 mois ou plus, à raison de 1h-3h/mois : de la flexibilité pour m'engager</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" ontouchstart="this.classList.toggle('hover');">
+				<div class="container">
+					<div class="front front1">
+						<div class="inner">
+							<i class="fa-solid fa-clock-rotate-left"></i>
+						<p>Mission sur plusieurs mois.</p>
+						</div>
+					</div>
+					<div class="back">
+						<div class="inner">
+                            <span>Pour 6 mois ou plus, à raison de 4h/mois : la continuité c'est la clé </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+</div>
+
     </div>
     <div class="zone-missions">
     </div>
 </div>
 
 <div id="assos">
-</div> #}
+</div>
 
-<style>
+{# <style>
 .questionnaire-body {
     max-width: 600px;
 }
-</style>
+</style> #}
 
 <h1 class="text-center mb-4">Trouver mon asso</h1>
 
 {# ZONE REGIONS #}
 <section class="questionnaire-body p-4 border rounded mx-auto">
 
-<div class="map" id="map">
+{# <div class="map" id="map">
     <div class="map__image">
 
         <svg preserveAspectRatio  xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 612 585">
@@ -242,7 +325,7 @@
             <li><a href="http://google.com/?q=L" id="list-L">Pays-de-la-Loire</a></li>
             <li><a href="http://google.com/?q=M" id="list-M">Provence-Alpes-Côte d'Azur</a></li>
         </ul>
-    </div>
+    </div> #}
 </div>
 </body>
 </html>

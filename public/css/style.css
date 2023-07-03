@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: serif;
     background-color: #F5F5F5;
     color: black;
@@ -42,7 +42,7 @@ body {
 }
 
 /* Liste
-   ========================================================================== */
+   ========================================================================== 
 .map__list {
     float: right;
     width: 280px;
@@ -82,4 +82,338 @@ body {
         position: static;
         width: 100%;
     }
+} */
+
+
+/* CSS POUR LE RYTHME DES MISSIONS */
+/* *{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+} */
+
+h1{
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.cols{
+display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.col{
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.container{
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+}
+
+.front,
+.back{
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.back{
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+    background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+    background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+}
+
+.front:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+            perspective: inherit;
+    z-index: 2;
+}
+
+.container .back{
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container .front{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container:hover .back{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container:hover .front{
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.front .inner p{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.front .inner p:after{
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+}
+
+.front .inner span{
+    color: rgba(255,255,255,0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.front1{
+    background-color: #330072;
+}
+
+.front2{
+    background-color:#E9041E;
+}
+
+@media screen and (max-width: 64rem){
+    .col{
+    width: calc(33.333333% - 2rem);
+    }
+}
+
+@media screen and (max-width: 48rem){
+    .col{
+    width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 32rem){
+    .col{
+    width: 100%;
+    margin: 0 0 2rem 0;
+    }
+}
+
+/* CSS POUR L ACCUEIL */
+@import 'compass/css3';
+ *, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body {
+    overflow: hidden;
+    background: #FFF3E0;
+} */
+svg {
+    width: 0;
+    height: 0;
+    display: block;
+}
+.grid {
+    width: 80vmin;
+    margin: 10vmin auto;
+    display: flex;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 8vmin 4vmin rgba(0, 0, 0, .1), inset 0px 0px 8vmin 4vmin rgba(0, 0, 0, .1);
+    perspective: 2000;
+}
+.item-box {
+    position: relative;
+    width: 26.6666666667vmin;
+    height: 26.6666666667vmin;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transition: all 0.225s cubic-bezier(0.65, 0.05, 0.36, 1) 0.225s;
+}
+.item-box:nth-child(1) .puzzle:before {
+    background-image: url("https://unsplash.it/600/600?image=1011");
+}
+.item-box:nth-child(2) .puzzle:before {
+    background-image: url("https://unsplash.it/600/600?image=1006");
+}
+.item-box:nth-child(3) .puzzle:before {
+    background-image: url("https://unsplash.it/600/600?image=883");
+}
+.item-box:nth-child(4) .puzzle:before {
+    background-image: url("https://unsplash.it/600/600?image=1074");
+}
+.item-box:nth-child(5) .puzzle:before {
+    background-image: url("https://unsplash.it/600/600?image=823");
+}
+.item-box:nth-child(6) .puzzle:before {
+    background-image: url("https://unsplash.it/600/600?image=64");
+}
+.item-box:nth-child(7) .puzzle:before {
+    background-image: url("https://unsplash.it/600/600?image=65");
+}
+.item-box:nth-child(8) .puzzle:before {
+    background-image: url("https://unsplash.it/600/600?image=839");
+}
+.item-box:nth-child(9) .puzzle:before {
+    background-image: url("https://unsplash.it/600/600?image=832");
+}
+.item-box:hover {
+    transform: scale(1.25, 1.25);
+    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, .2);
+}
+.item-box:hover .puzzle {
+    transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
+    opacity: 1;
+}
+.item-box .item-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+}
+.piece {
+    position: absolute;
+    width: 13.3333333333vmin;
+    height: 13.3333333333vmin;
+    transform-style: preserve-3d;
+}
+.piece:nth-child(1) {
+    transform: translateX(cos(-135deg)*sqrt(2)*50% - 50%) translateY(sin(-135deg)*sqrt(2)*50% - 50%) rotate(0deg);
+}
+.piece:nth-child(1) .puzzle:before {
+    background-position: cos(-135deg)*sqrt(2)*50% - 50%100% sin(-135deg)*sqrt(2)*50% - 50%100%;
+    transform: rotate(0deg);
+}
+.piece:nth-child(2) {
+    transform: translateX(cos(-45deg)*sqrt(2)*50% - 50%) translateY(sin(-45deg)*sqrt(2)*50% - 50%) rotate(90deg);
+}
+.piece:nth-child(2) .puzzle:before {
+    background-position: cos(-45deg)*sqrt(2)*50% - 50%100% sin(-45deg)*sqrt(2)*50% - 50%100%;
+    transform: rotate(-90deg);
+}
+.piece:nth-child(3) {
+    transform: translateX(cos(45deg)*sqrt(2)*50% - 50%) translateY(sin(45deg)*sqrt(2)*50% - 50%) rotate(180deg);
+}
+.piece:nth-child(3) .puzzle:before {
+    background-position: cos(45deg)*sqrt(2)*50% - 50%100% sin(45deg)*sqrt(2)*50% - 50%100%;
+    transform: rotate(-180deg);
+}
+.piece:nth-child(4) {
+    transform: translateX(cos(135deg)*sqrt(2)*50% - 50%) translateY(sin(135deg)*sqrt(2)*50% - 50%) rotate(270deg);
+}
+.piece:nth-child(4) .puzzle:before {
+    background-position: cos(135deg)*sqrt(2)*50% - 50%100% sin(135deg)*sqrt(2)*50% - 50%100%;
+    transform: rotate(-270deg);
+}
+.puzzle {
+    position: absolute;
+    width: 17.1750480901vmin;
+    height: 17.1750480901vmin;
+    background-color: #000;
+    clip-path: url(#puzzle);
+    opacity: 0.8;
+    transform: translateX(-22.368%) translateY(-22.368%) translateZ(0px) rotateX(0.5turn) rotateY(0.5turn);
+    transition: all 0.45s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.puzzle:before {
+    content: "";
+    position: absolute;
+    width: 17.1750480901vmin;
+    height: 17.1750480901vmin;
+    background-size: 155.264%;
+}
+@keyframes init {
+    from {
+        transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
+	}
 }
