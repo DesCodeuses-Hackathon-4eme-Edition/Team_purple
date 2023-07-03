@@ -12,13 +12,21 @@ class AppFixtures extends Fixture
     public function load(ObjectManager $manager): void
     {
         $regions = [
-            'Ile-de-France',
+            'Alsace-Champagne-Ardenne-Lorraine',
+            'Aquitaine-Limousin-Poitou-Charentes',
+            'Auvergne-Rhône-Alpes',
+            'Bourgogne-Franche-Comté',
+            'Bretagne',
+            'Centre-Val de Loire',
+            'Corse',
+            'Île-de-France',
+            'Languedoc-Roussillon-Midi-Pyrénées',
+            'Nord-Pas-de-Calais-Picardie',
             'Normandie',
-            'Nouvelle Aquitaine',
-            'Occitanie',
-            'Pays de La Loire',
+            'Pays-de-la-Loire',
             'Provence-Alpes-Côte d\'Azur',
         ];
+        
         foreach ($regions as $i => $region) {
             $filter = new Filter();
             $filter->setType('region');
