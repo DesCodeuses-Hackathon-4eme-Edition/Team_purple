@@ -136,9 +136,7 @@ span{
 
 .wrapper{
     width: 80%;
-
     margin: 0 auto;
-    max-width: 80rem;
 }
 
 .wrapper-bg{
@@ -262,7 +260,7 @@ span{
     position: absolute;
     left: 0;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     outline: 1px solid transparent;
@@ -450,27 +448,28 @@ span{
     background-position: 0 0;
     transform: rotate(0deg);
 }	 
- .piece:nth-child(2) {
-	 transform: translateX(0%) translateY(-100%) rotate(90deg);
+.piece:nth-child(2) {
+    transform: translateX(0%) translateY(-100%) rotate(90deg);
 }
- .piece:nth-child(2) .puzzle:before {
-    background-position: 100% 0;
-    transform: rotate(-90deg);
+.piece:nth-child(2) .puzzle:before {
+background-position: 100% 0;
+transform: rotate(-90deg);
 }
- .piece:nth-child(3) {
-	 transform: translateX(0%) translateY(0%) rotate(180deg);
+.piece:nth-child(3) {
+    transform: translateX(0%) translateY(0%) rotate(180deg);
 }
- .piece:nth-child(3) .puzzle:before {
-	 background-position:100% 100%;
-	 transform: rotate(-180deg);
+.piece:nth-child(3) .puzzle:before {
+    background-position:100% 100%;
+    transform: rotate(-180deg);
 }
- .piece:nth-child(4) {
-	 transform: translateX(-100%) translateY(0%) rotate(270deg);
+.piece:nth-child(4) {
+    transform: translateX(-100%) translateY(0%) rotate(270deg);
 }
- .piece:nth-child(4) .puzzle:before {
-	 background-position: 0 100%;
-	 transform: rotate(-270deg);
+.piece:nth-child(4) .puzzle:before {
+    background-position: 0 100%;
+    transform: rotate(-270deg);
 }
+
  .puzzle {
 	 position: absolute;
 	 width: 17.1750480901vmin;
@@ -481,17 +480,18 @@ span{
 	 transform: translateX(-22.368%) translateY(-22.368%) translateZ(0px) rotateX(0.5turn) rotateY(0.5turn);
 	 transition: all 0.95s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
- .puzzle:before {
-	 content: "";
-	 position: absolute;
-	 width: 17.1750480901vmin;
-	 height: 17.1750480901vmin;
-	 background-size: 155.264%;
+
+.puzzle:before {
+    content: "";
+    position: absolute;
+    width: 17.1750480901vmin;
+    height: 17.1750480901vmin;
+    background-size: 155.264%;
 }
- @keyframes init {
-	 from {
-		 transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
- 
+@keyframes init {
+    from {
+        transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
+
 }
 
 }
@@ -503,10 +503,11 @@ span{
 
 
 #confetti {
-    position: relative;
+    position: absolute;
     top:0;
     left: 0;
     z-index: 1;
+    pointer-events: none;
 }
 
 #party-info {
@@ -536,11 +537,20 @@ span{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn{
+    background: #E55F50;
+    width: 250px;
+    height: 100px;
 }
 
 /* SECTION PUZZLE RESULTAT ASSO */
 
 .puzzle-final{
+    position: relative;
     background-color: #ffff;
     padding-left: 5%;
     padding-right: 5%;
