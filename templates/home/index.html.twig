@@ -69,10 +69,12 @@ document.getElementById('map').scrollIntoView({
 })
 
 btnmap.addEventListener("click", 
-function() {
+function(event) {
 document.getElementById('mission').scrollIntoView({
         behavior: 'smooth'
     });;
+    event.preventDefault();
+    return false;
 update();
 })
 
