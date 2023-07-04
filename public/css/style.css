@@ -10,11 +10,17 @@
 
 /* SCROLL PROGRESSION  */
 
+.progresswrapper{
+    position: fixed;
+  z-index: 15000;
+  width: 100vw;
+  top: 0;
+}
+
 #Progress_Status {
   width: 100%;
   background-color: #000000;
   border-radius: 10px;
-  position: fixed;
 }
   
 #myprogressBar {
@@ -26,9 +32,7 @@
   line-height: 32px;
   color: black;
   transition: 2s;
-  position: absolute, fixed;
 }
-  
 
 
 /* ===========================SECTION MAP=================================== */
@@ -550,7 +554,7 @@ span{
 
 .info-asso{
     padding-left: 5%;
-    text-align: center, justify;
+    text-align: center;
 }
 
 .result{
@@ -565,7 +569,7 @@ span{
 
 
 html .puzzle_wrapper:hover:before, body .puzzle_wrapper:hover:before, html .puzzle_wrapper:hover:after, body .puzzle_wrapper:hover:after {
-  z-index: 4;
+  z-index: 14;
   opacity: 1;
 }
 html .puzzle_wrapper:hover .puzzle_1, body .puzzle_wrapper:hover .puzzle_1 {
@@ -719,3 +723,6 @@ html .puzzle_wrapper:hover, body .puzzle_wrapper:hover {
 
 /* FIN CODE PUZZLE ASSSO */
 
+/* .puzzle-final>.puzzle_wrapper:before {
+    background-size: 30px 50px !important;
+} */
