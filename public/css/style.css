@@ -116,9 +116,7 @@ span{
 
 .wrapper{
     width: 80%;
-    height: 80%;
     margin: 0 auto;
-    max-width: 80rem;
 }
 
 .wrapper-bg{
@@ -242,7 +240,7 @@ span{
     position: absolute;
     left: 0;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     outline: 1px solid transparent;
@@ -335,132 +333,132 @@ span{
 /* ========================= SECTION ACCUEIL PUZZLE ========================= */
 @import 'compass/css3';
  *, *:before, *:after {
-	 margin: 0;
-	 padding: 0;
-	 box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
- body {
-	 background: #FFF3E0;
-   
+body {
+    background: #FFF3E0;
+
 }
- svg {
-	 width: 0;
-	 height: 0;
-	 display: block;
+svg {
+    width: 0;
+    height: 0;
+    display: block;
 }
- .grid {
-	 width: 80vmin;
-	 margin: 10vmin auto;
-	 display: flex;
-	 flex-wrap: wrap;
-	 transform-style: preserve-3d;
-	 box-shadow: 0px 0px 8vmin 4vmin rgba(0, 0, 0, .1), inset 0px 0px 8vmin 4vmin rgba(0, 0, 0, .1);
-	 perspective: 2000;
+.grid {
+    width: 80vmin;
+    margin: 10vmin auto;
+    display: flex;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 8vmin 4vmin rgba(0, 0, 0, .1), inset 0px 0px 8vmin 4vmin rgba(0, 0, 0, .1);
+    perspective: 2000;
 }
- .item-box {
-	 position: relative;
-	 width: 26.6666666667vmin;
-	 height: 26.6666666667vmin;
-	 transform-style: preserve-3d;
-	 cursor: pointer;
-	 transition: all 0.225s cubic-bezier(0.65, 0.05, 0.36, 1) 0.225s;
+.item-box {
+    position: relative;
+    width: 26.6666666667vmin;
+    height: 26.6666666667vmin;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transition: all 0.225s cubic-bezier(0.65, 0.05, 0.36, 1) 0.225s;
 }
- .item-box:nth-child(1) .puzzle:before {
-	 background-image:url("/images-logos-asso/Kodiko.jpg") ;
+.item-box:nth-child(1) .puzzle:before {
+    background-image:url("/images-logos-asso/Kodiko.jpg") ;
 }
- .item-box:nth-child(2) .puzzle:before {
-	 background-image: url("/images-logos-asso/Article.jpg");
+.item-box:nth-child(2) .puzzle:before {
+    background-image: url("/images-logos-asso/Article.jpg");
 }
- .item-box:nth-child(3) .puzzle:before {
-	 background-image: url("/images-logos-asso/Duo for.png");
+.item-box:nth-child(3) .puzzle:before {
+    background-image: url("/images-logos-asso/Duo for.png");
 }
- .item-box:nth-child(4) .puzzle:before {
-	 background-image: url("/images-logos-asso/C'Possible.jpg");
+.item-box:nth-child(4) .puzzle:before {
+    background-image: url("/images-logos-asso/C'Possible.jpg");
 }
- .item-box:nth-child(5) .puzzle:before {
-	 background-image: url("/images-logos-asso/Capital filles.jpg");
+.item-box:nth-child(5) .puzzle:before {
+    background-image: url("/images-logos-asso/Capital filles.jpg");
 }
- .item-box:nth-child(6) .puzzle:before {
-	 background-image: url("/images-logos-asso/Institut de l'Engagement.png");
+.item-box:nth-child(6) .puzzle:before {
+    background-image: url("/images-logos-asso/Institut de l'Engagement.png");
 }
- .item-box:nth-child(7) .puzzle:before {
-	 background-image: url("/images-logos-asso/NQT.jpg");
+.item-box:nth-child(7) .puzzle:before {
+    background-image: url("/images-logos-asso/NQT.jpg");
 }
- .item-box:nth-child(8) .puzzle:before {
-	 background-image: url("/images-logos-asso/Zup de co.png");
+.item-box:nth-child(8) .puzzle:before {
+    background-image: url("/images-logos-asso/Zup de co.png");
 }
- .item-box:nth-child(9) .puzzle:before {
-	 background-image: url("/images-logos-asso/Proxite.png");
+.item-box:nth-child(9) .puzzle:before {
+    background-image: url("/images-logos-asso/Proxite.png");
 }
- .item-box:hover {
-	 transform: scale(1.25, 1.25);
-	 box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, .2);
+.item-box:hover {
+    transform: scale(1.25, 1.25);
+    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, .2);
 }
- .item-box:hover .puzzle {
-	 transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
-	 opacity: 1;
+.item-box:hover .puzzle {
+    transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
+    opacity: 1;
 }
- .item-box .item-container {
-	 position: absolute;
-	 top: 50%;
-	 left: 50%;
-	 transform-style: preserve-3d;
+.item-box .item-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
 }
- .piece {
-	 position: absolute;
-	 width: 13.3333333333vmin;
-	 height: 13.3333333333vmin;
-	 transform-style: preserve-3d;
+.piece {
+    position: absolute;
+    width: 13.3333333333vmin;
+    height: 13.3333333333vmin;
+    transform-style: preserve-3d;
 }
- .piece:nth-child(1) {
-    transform:translateX(-100%) translateY(-100%) rotate(0deg);
+.piece:nth-child(1) {
+transform:translateX(-100%) translateY(-100%) rotate(0deg);
 }
- .piece:nth-child(1) .puzzle:before {
-    background-position: 0 0;
-    transform: rotate(0deg);
+.piece:nth-child(1) .puzzle:before {
+background-position: 0 0;
+transform: rotate(0deg);
 }	 
- .piece:nth-child(2) {
-	 transform: translateX(0%) translateY(-100%) rotate(90deg);
+.piece:nth-child(2) {
+    transform: translateX(0%) translateY(-100%) rotate(90deg);
 }
- .piece:nth-child(2) .puzzle:before {
-    background-position: 100% 0;
-    transform: rotate(-90deg);
+.piece:nth-child(2) .puzzle:before {
+background-position: 100% 0;
+transform: rotate(-90deg);
 }
- .piece:nth-child(3) {
-	 transform: translateX(0%) translateY(0%) rotate(180deg);
+.piece:nth-child(3) {
+    transform: translateX(0%) translateY(0%) rotate(180deg);
 }
- .piece:nth-child(3) .puzzle:before {
-	 background-position:100% 100%;
-	 transform: rotate(-180deg);
+.piece:nth-child(3) .puzzle:before {
+    background-position:100% 100%;
+    transform: rotate(-180deg);
 }
- .piece:nth-child(4) {
-	 transform: translateX(-100%) translateY(0%) rotate(270deg);
+.piece:nth-child(4) {
+    transform: translateX(-100%) translateY(0%) rotate(270deg);
 }
- .piece:nth-child(4) .puzzle:before {
-	 background-position: 0 100%;
-	 transform: rotate(-270deg);
+.piece:nth-child(4) .puzzle:before {
+    background-position: 0 100%;
+    transform: rotate(-270deg);
 }
- .puzzle {
-	 position: absolute;
-	 width: 17.1750480901vmin;
-	 height: 17.1750480901vmin;
-	 background-color: #000;
-	 clip-path: url(#puzzle);
-	 opacity: 0.8;
-	 transform: translateX(-22.368%) translateY(-22.368%) translateZ(0px) rotateX(0.5turn) rotateY(0.5turn);
-	 transition: all 0.45s cubic-bezier(0.65, 0.05, 0.36, 1);
+.puzzle {
+    position: absolute;
+    width: 17.1750480901vmin;
+    height: 17.1750480901vmin;
+    background-color: #000;
+    clip-path: url(#puzzle);
+    opacity: 0.8;
+    transform: translateX(-22.368%) translateY(-22.368%) translateZ(0px) rotateX(0.5turn) rotateY(0.5turn);
+    transition: all 0.45s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
- .puzzle:before {
-	 content: "";
-	 position: absolute;
-	 width: 17.1750480901vmin;
-	 height: 17.1750480901vmin;
-	 background-size: 155.264%;
+.puzzle:before {
+    content: "";
+    position: absolute;
+    width: 17.1750480901vmin;
+    height: 17.1750480901vmin;
+    background-size: 155.264%;
 }
- @keyframes init {
-	 from {
-		 transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
- 
+@keyframes init {
+    from {
+        transform: translateX(0) translateY(0) translateZ(1px) rotateX(0) rotateY(0);
+
 }
 
 }
@@ -477,10 +475,11 @@ body {
 } */
 
 #confetti {
-    position: relative;
+    position: absolute;
     top:0;
     left: 0;
     z-index: 1;
+    pointer-events: none;
 }
 
 #party-info {
@@ -510,11 +509,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn{
+    background: #E55F50;
+    width: 250px;
+    height: 100px;
 }
 
 /* SECTION PUZZLE RESULTAT ASSO */
 
 .puzzle-final{
+    position: relative;
     background-color: #ffff;
     margin-left: 10%;
     padding-left: 5%;
