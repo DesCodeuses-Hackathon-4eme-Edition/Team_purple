@@ -629,14 +629,14 @@ html .puzzle_wrapper .puzzle_2:after, body .puzzle_wrapper .puzzle_2:after {
   transform: rotate(180deg);
 }
 html .puzzle_wrapper .puzzle_3, body .puzzle_wrapper .puzzle_3 {
-  background-color: #010035;
+  background-color: #000000;
   top: 250px;
   left: 0;
   z-index: 2;
   transform: rotate(-90deg);
 }
 html .puzzle_wrapper .puzzle_3:after, body .puzzle_wrapper .puzzle_3:after, html .puzzle_wrapper .puzzle_3:before, body .puzzle_wrapper .puzzle_3:before {
-  background-color: #010035;
+  background-color: #000000;
   top: 190px;
   left: 75px;
 }
@@ -712,7 +712,7 @@ html .puzzle_wrapper:before, body .puzzle_wrapper:before, html .puzzle_wrapper:a
     position: absolute;
     height: 100%;
     width: 105%;
-    background: url('https://picsum.photos/id/1/200/300');
+    background: url("/images/logo-assoc.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
