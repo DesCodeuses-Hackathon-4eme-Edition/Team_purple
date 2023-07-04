@@ -3,18 +3,87 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
+<body>
 
-{% include 'home/recherche.html.twig' %}
+<div id="Progress_Status">
+  <div id="myprogressBar">0 %</div>
+</div>
+  
+{# <br>
+<button onclick="update()">Start Download</button>  #}
+  
 
+<section id="accueil">
+{% include 'home/accueil.html.twig' %}
+
+</section>
+
+<section id="map">
 {% include 'home/map.html.twig' %}
 
+</section>
+
+<section id="mission">
 {% include 'home/mission.html.twig' %}
 
+</section>
+
+<section id="rythme">
 {% include 'home/rythme.html.twig' %}
-    
+
+</section>
+
+<section id="type">
 {% include 'home/type.html.twig' %}
-    
+
+</section>
+
+<section id="resultat">
 {% include 'home/resultat.html.twig' %}
 
+</section>
 
+
+<script>
+var element = document.getElementById("myprogressBar"); 
+var taille = 0;
+
+function update() {
+    taille++; 
+
+  element.style.width = taille * 20 + '%';
+    element.innerHTML = taille * 20  + '%';
+}
+
+var btncommencer = document.getElementById("commencer");
+var btnmap = document.getElementById("map");
+var btnmission = document.getElementById("mission");
+
+btncommencer.addEventListener("click", 
+function() {
+document.getElementById('map').scrollIntoView({
+        behavior: 'smooth'
+    });;
+})
+
+btnmap.addEventListener("click", 
+function() {
+document.getElementById('mission').scrollIntoView({
+        behavior: 'smooth'
+    });;
+update();
+})
+
+btnmission.addEventListener("click", 
+function() {
+document.getElementById('rythme').scrollIntoView({
+        behavior: 'smooth'
+    });;
+update();
+})
+
+
+
+</script>
+</body>
 {% endblock %}
