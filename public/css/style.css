@@ -9,7 +9,9 @@
 }
 
 /* ===========================SECTION MAP=================================== */
-
+/* *{
+    width: 100%;
+} */
 .map {
     position: relative;
     overflow: hidden;
@@ -479,4 +481,15 @@ body {
     width: 400px;
     z-index: 2;
     color: gray;
+}
+
+/* ZONE DES TYPES DE MISSIONS */
+.offcanvas-body{
+    text-align: center;
+}
+
+.type-button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
