@@ -338,6 +338,9 @@ span{
 	 transform-style: preserve-3d;
 	 box-shadow: 0px 0px 8vmin 4vmin rgba(0, 0, 0, .1), inset 0px 0px 8vmin 4vmin rgba(0, 0, 0, .1);
 	 perspective: 2000;
+     background-image: url("/images/logo-sg.png");
+     background-size: cover;
+     background-position: center;
 }
  .item-box {
 	 position: relative;
@@ -345,25 +348,27 @@ span{
 	 height: 26.6666666667vmin;
 	 transform-style: preserve-3d;
 	 cursor: pointer;
-	 transition: all 0.225s cubic-bezier(0.65, 0.05, 0.36, 1) 0.225s;
+	 transition: all 0.95s cubic-bezier(0.65, 0.05, 0.36, 1) 0.225s;
+
 }
+
  .item-box:nth-child(1) .puzzle:before {
 	 background-image:url("/images-logos-asso/Kodiko.jpg") ;
 }
  .item-box:nth-child(2) .puzzle:before {
-	 background-image: url("/images-logos-asso/Article.jpg");
+	 background-image: url("/images-logos-asso/Article.png");
 }
  .item-box:nth-child(3) .puzzle:before {
-	 background-image: url("/images-logos-asso/Duo for.png");
+	 background-image: url("/images-logos-asso/Duofor.png");
 }
  .item-box:nth-child(4) .puzzle:before {
-	 background-image: url("/images-logos-asso/C'Possible.jpg");
+	 background-image: url("/images-logos-asso/CPossible.jpg");
 }
  .item-box:nth-child(5) .puzzle:before {
 	 background-image: url("/images-logos-asso/Capital filles.jpg");
 }
  .item-box:nth-child(6) .puzzle:before {
-	 background-image: url("/images-logos-asso/Institut de l'Engagement.png");
+	 background-image: url("/images-logos-asso/Institu.png");
 }
  .item-box:nth-child(7) .puzzle:before {
 	 background-image: url("/images-logos-asso/NQT.jpg");
@@ -373,6 +378,9 @@ span{
 }
  .item-box:nth-child(9) .puzzle:before {
 	 background-image: url("/images-logos-asso/Proxite.png");
+}
+.item-box:nth-child(10) .puzzle:before {
+    background-image: url("/images-logos-asso/Proxite.png");
 }
  .item-box:hover {
 	 transform: scale(1.25, 1.25);
@@ -393,7 +401,10 @@ span{
 	 width: 13.3333333333vmin;
 	 height: 13.3333333333vmin;
 	 transform-style: preserve-3d;
+   
+
 }
+
  .piece:nth-child(1) {
     transform:translateX(-100%) translateY(-100%) rotate(0deg);
 }
@@ -428,9 +439,9 @@ span{
 	 height: 17.1750480901vmin;
 	 background-color: #000;
 	 clip-path: url(#puzzle);
-	 opacity: 0.8;
+	 opacity: 0.05;
 	 transform: translateX(-22.368%) translateY(-22.368%) translateZ(0px) rotateX(0.5turn) rotateY(0.5turn);
-	 transition: all 0.45s cubic-bezier(0.65, 0.05, 0.36, 1);
+	 transition: all 0.95s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
  .puzzle:before {
 	 content: "";
