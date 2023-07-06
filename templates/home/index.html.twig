@@ -60,12 +60,16 @@ function update() {
 var btncommencer = document.getElementById("commencer");
 var btnmap = document.getElementById("map");
 var btnmission = document.getElementById("mission");
+var btnrythme = document.getElementById("rythme");
+var btntype = document.getElementById("type");
+var btnresultat = document.getElementById("resultat");
 
 btncommencer.addEventListener("click", 
 function() {
 document.getElementById('map').scrollIntoView({
         behavior: 'smooth'
     });;
+update();
 })
 
 btnmap.addEventListener("click", 
@@ -86,6 +90,29 @@ document.getElementById('rythme').scrollIntoView({
 update();
 })
 
+btnmission.addEventListener("click", 
+function() {
+document.getElementById('').scrollIntoView({
+        behavior: 'smooth'
+    });;
+update();
+})
+
+btnrythme.addEventListener("click",
+function() {
+document.getElementById('type').scrollIntoView({
+        behavior: 'smooth'
+    });;
+update();
+})
+
+btntype.addEventListener("click",
+function() {
+document.getElementById('resultat').scrollIntoView({
+        behavior: 'smooth'
+    });;
+update();
+})
 
 
 </script>

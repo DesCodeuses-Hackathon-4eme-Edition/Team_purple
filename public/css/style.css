@@ -541,7 +541,7 @@ transform: rotate(-90deg);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: white;
+    color: rgb(4, 4, 4);
     border-radius: 20px;
 }
 
@@ -553,7 +553,7 @@ transform: rotate(-90deg);
 
 /* SECTION PUZZLE RESULTAT ASSO */
 
-.puzzle-final{
+.puzze-final{
     position: relative;
     background-color: #ffff;
     padding-left: 5%;
@@ -578,91 +578,91 @@ transform: rotate(-90deg);
 }
 
 
-html .puzzle_wrapper:hover:before, body .puzzle_wrapper:hover:before, html .puzzle_wrapper:hover:after, body .puzzle_wrapper:hover:after {
+html .puzze_wrapper:hover:before, body .puzze_wrapper:hover:before, html .puzze_wrapper:hover:after, body .puzze_wrapper:hover:after {
   z-index: 14;
   opacity: 1;
 }
-html .puzzle_wrapper:hover .puzzle_1, body .puzzle_wrapper:hover .puzzle_1 {
+html .puzze_wrapper:hover .puzze_1, body .puzze_wrapper:hover .puzze_1 {
   transform: translatex(25px) translatey(25px);
 }
-html .puzzle_wrapper:hover .puzzle_2, body .puzzle_wrapper:hover .puzzle_2 {
+html .puzze_wrapper:hover .puzze_2, body .puzze_wrapper:hover .puzze_2 {
   transform: rotate(90deg) translatex(25px) translatey(25px);
 }
-html .puzzle_wrapper:hover .puzzle_3, body .puzzle_wrapper:hover .puzzle_3 {
+html .puzze_wrapper:hover .puzze_3, body .puzze_wrapper:hover .puzze_3 {
   transform: rotate(-90deg) translatex(25px) translatey(25px);
 }
-html .puzzle_wrapper:hover .puzzle_4, body .puzzle_wrapper:hover .puzzle_4 {
+html .puzze_wrapper:hover .puzze_4, body .puzze_wrapper:hover .puzze_4 {
   transform: rotate(180deg) translatex(25px) translatey(25px);
 }
-html .puzzle_wrapper .puzzle_1, body .puzzle_wrapper .puzzle_1 {
+html .puzze_wrapper .puzze_1, body .puzze_wrapper .puzze_1 {
   background-color: #E9041E;
   top: 0px;
   left: 0px;
   z-index: 3;
 }
-html .puzzle_wrapper .puzzle_1:after, body .puzzle_wrapper .puzzle_1:after, html .puzzle_wrapper .puzzle_1:before, body .puzzle_wrapper .puzzle_1:before {
+html .puzze_wrapper .puzze_1:after, body .puzze_wrapper .puzze_1:after, html .puzze_wrapper .puzze_1:before, body .puzze_wrapper .puzze_1:before {
   background-color: #E9041E;
   top: 190px;
   left: 75px;
 }
-html .puzzle_wrapper .puzzle_1:before, body .puzzle_wrapper .puzzle_1:before {
+html .puzze_wrapper .puzze_1:before, body .puzze_wrapper .puzze_1:before {
   top: calc(50% - 20px);
   left: 190px;
   background-color: #E9041E;
   transform: rotate(-90deg);
 }
-html .puzzle_wrapper .puzzle_2, body .puzzle_wrapper .puzzle_2 {
+html .puzze_wrapper .puzze_2, body .puzze_wrapper .puzze_2 {
   background-color: #000000;
   top: 0px;
   left: 250px;
   transform: rotate(90deg);
 }
-html .puzzle_wrapper .puzzle_2:after, body .puzzle_wrapper .puzzle_2:after, html .puzzle_wrapper .puzzle_2:before, body .puzzle_wrapper .puzzle_2:before {
+html .puzze_wrapper .puzze_2:after, body .puzze_wrapper .puzze_2:after, html .puzze_wrapper .puzze_2:before, body .puzze_wrapper .puzze_2:before {
   background-color: #ecf0f1;
   top: 200px;
   left: 40px;
 }
-html .puzzle_wrapper .puzzle_2:before, body .puzzle_wrapper .puzzle_2:before {
+html .puzze_wrapper .puzze_2:before, body .puzze_wrapper .puzze_2:before {
   top: calc(50% - 20px);
   left: 160px;
   transform: rotate(90deg);
 }
-html .puzzle_wrapper .puzzle_2:after, body .puzzle_wrapper .puzzle_2:after {
+html .puzze_wrapper .puzze_2:after, body .puzze_wrapper .puzze_2:after {
   top: 160px;
   left: calc(50% - 20px);
   transform: rotate(180deg);
 }
-html .puzzle_wrapper .puzzle_3, body .puzzle_wrapper .puzzle_3 {
+html .puzze_wrapper .puzze_3, body .puzze_wrapper .puzze_3 {
   background-color: #000000;
   top: 250px;
   left: 0;
   z-index: 2;
   transform: rotate(-90deg);
 }
-html .puzzle_wrapper .puzzle_3:after, body .puzzle_wrapper .puzzle_3:after, html .puzzle_wrapper .puzzle_3:before, body .puzzle_wrapper .puzzle_3:before {
+html .puzze_wrapper .puzze_3:after, body .puzze_wrapper .puzze_3:after, html .puzze_wrapper .puzze_3:before, body .puzze_wrapper .puzze_3:before {
   background-color: #000000;
   top: 190px;
   left: 75px;
 }
-html .puzzle_wrapper .puzzle_3:before, body .puzzle_wrapper .puzzle_3:before {
+html .puzze_wrapper .puzze_3:before, body .puzze_wrapper .puzze_3:before {
   top: calc(50% - 25px);
   left: 160px;
   background-color: #ecf0f1;
   transform: rotate(90deg);
 }
-html .puzzle_wrapper .puzzle_4, body .puzzle_wrapper .puzzle_4 {
+html .puzze_wrapper .puzze_4, body .puzze_wrapper .puzzle_4 {
   background-color: #E9041E;
   top: 250px;
   left: 250px;
   z-index: 1;
   transform: rotate(180deg);
 }
-html .puzzle_wrapper .puzzle_4:after, body .puzzle_wrapper .puzzle_4:after, html .puzzle_wrapper .puzzle_4:before, body .puzzle_wrapper .puzzle_4:before {
+html .puzze_wrapper .puzze_4:after, body .puzze_wrapper .puzze_4:after, html .puzze_wrapper .puzze_4:before, body .puzze_wrapper .puzze_4:before {
   background-color: #E9041E;
   top: 190px;
   left: 80px;
 }
-html .puzzle_wrapper .puzzle_4:before, body .puzzle_wrapper .puzzle_4:before {
+html .puzze_wrapper .puzze_4:before, body .puzze_wrapper .puzze_4:before {
   top: calc(50% - 25px);
   left: 160px;
   background-color: #ecf0f1;
@@ -687,7 +687,7 @@ html .puzzle_wrapper .puzzle_4:before, body .puzzle_wrapper .puzzle_4:before {
   }
 }
 
-html .puzzle, html .puzzle_wrapper .puzzle_1, html body .puzzle_wrapper .puzzle_1, body .puzzle_wrapper html .puzzle_1, html .puzzle_wrapper .puzzle_2, html body .puzzle_wrapper .puzzle_2, body .puzzle_wrapper html .puzzle_2, html .puzzle_wrapper .puzzle_3, html body .puzzle_wrapper .puzzle_3, body .puzzle_wrapper html .puzzle_3, html .puzzle_wrapper .puzzle_4, html body .puzzle_wrapper .puzzle_4, body .puzzle_wrapper html .puzzle_4, body .puzzle, body html .puzzle_wrapper .puzzle_1, html .puzzle_wrapper body .puzzle_1, body .puzzle_wrapper .puzzle_1, body html .puzzle_wrapper .puzzle_2, html .puzzle_wrapper body .puzzle_2, body .puzzle_wrapper .puzzle_2, body html .puzzle_wrapper .puzzle_3, html .puzzle_wrapper body .puzzle_3, body .puzzle_wrapper .puzzle_3, body html .puzzle_wrapper .puzzle_4, html .puzzle_wrapper body .puzzle_4, body .puzzle_wrapper .puzzle_4 {
+html .puzze, html .puzze_wrapper .puzze_1, html body .puzze_wrapper .puzze_1, body .puzze_wrapper html .puzze_1, html .puzze_wrapper .puzze_2, html body .puzze_wrapper .puzze_2, body .puzze_wrapper html .puzze_2, html .puzze_wrapper .puzze_3, html body .puzze_wrapper .puzze_3, body .puzze_wrapper html .puzze_3, html .puzze_wrapper .puzze_4, html body .puzze_wrapper .puzze_4, body .puzze_wrapper html .puzze_4, body .puzze, body html .puzze_wrapper .puzze_1, html .puzze_wrapper body .puzze_1, body .puzze_wrapper .puzze_1, body html .puzze_wrapper .puzze_2, html .puzze_wrapper body .puzze_2, body .puzze_wrapper .puzze_2, body html .puzze_wrapper .puzze_3, html .puzze_wrapper body .puzze_3, body .puzze_wrapper .puzze_3, body html .puzze_wrapper .puzze_4, html .puzze_wrapper body .puzze_4, body .puzze_wrapper .puzze_4 {
     height: 200px;
     width: 200px;
     position: absolute;
@@ -696,7 +696,7 @@ html .puzzle, html .puzzle_wrapper .puzzle_1, html body .puzzle_wrapper .puzzle_
     transition: all 0.3s ease;
 }
 
-html .puzzle:after, html .puzzle_wrapper .puzzle_1:after, html body .puzzle_wrapper .puzzle_1:after, body .puzzle_wrapper html .puzzle_1:after, html .puzzle_wrapper .puzzle_2:after, html body .puzzle_wrapper .puzzle_2:after, body .puzzle_wrapper html .puzzle_2:after, html .puzzle_wrapper .puzzle_3:after, html body .puzzle_wrapper .puzzle_3:after, body .puzzle_wrapper html .puzzle_3:after, html .puzzle_wrapper .puzzle_4:after, html body .puzzle_wrapper .puzzle_4:after, body .puzzle_wrapper html .puzzle_4:after, body .puzzle:after, body html .puzzle_wrapper .puzzle_1:after, html .puzzle_wrapper body .puzzle_1:after, body .puzzle_wrapper .puzzle_1:after, body html .puzzle_wrapper .puzzle_2:after, html .puzzle_wrapper body .puzzle_2:after, body .puzzle_wrapper .puzzle_2:after, body html .puzzle_wrapper .puzzle_3:after, html .puzzle_wrapper body .puzzle_3:after, body .puzzle_wrapper .puzzle_3:after, body html .puzzle_wrapper .puzzle_4:after, html .puzzle_wrapper body .puzzle_4:after, body .puzzle_wrapper .puzzle_4:after, html .puzzle:before, html .puzzle_wrapper .puzzle_1:before, html body .puzzle_wrapper .puzzle_1:before, body .puzzle_wrapper html .puzzle_1:before, html .puzzle_wrapper .puzzle_2:before, html body .puzzle_wrapper .puzzle_2:before, body .puzzle_wrapper html .puzzle_2:before, html .puzzle_wrapper .puzzle_3:before, html body .puzzle_wrapper .puzzle_3:before, body .puzzle_wrapper html .puzzle_3:before, html .puzzle_wrapper .puzzle_4:before, html body .puzzle_wrapper .puzzle_4:before, body .puzzle_wrapper html .puzzle_4:before, body .puzzle:before, body html .puzzle_wrapper .puzzle_1:before, html .puzzle_wrapper body .puzzle_1:before, body .puzzle_wrapper .puzzle_1:before, body html .puzzle_wrapper .puzzle_2:before, html .puzzle_wrapper body .puzzle_2:before, body .puzzle_wrapper .puzzle_2:before, body html .puzzle_wrapper .puzzle_3:before, html .puzzle_wrapper body .puzzle_3:before, body .puzzle_wrapper .puzzle_3:before, body html .puzzle_wrapper .puzzle_4:before, html .puzzle_wrapper body .puzzle_4:before, body .puzzle_wrapper .puzzle_4:before {
+html .puzze:after, html .puzze_wrapper .puzze_1:after, html body .puzze_wrapper .puzze_1:after, body .puzze_wrapper html .puzze_1:after, html .puzze_wrapper .puzze_2:after, html body .puzze_wrapper .puzze_2:after, body .puzze_wrapper html .puzze_2:after, html .puzze_wrapper .puzze_3:after, html body .puzze_wrapper .puzze_3:after, body .puzze_wrapper html .puzze_3:after, html .puzze_wrapper .puzze_4:after, html body .puzze_wrapper .puzze_4:after, body .puzze_wrapper html .puzze_4:after, body .puzze:after, body html .puzze_wrapper .puzze_1:after, html .puzze_wrapper body .puzze_1:after, body .puzze_wrapper .puzze_1:after, body html .puzze_wrapper .puzze_2:after, html .puzze_wrapper body .puzze_2:after, body .puzze_wrapper .puzze_2:after, body html .puzze_wrapper .puzze_3:after, html .puzze_wrapper body .puzze_3:after, body .puzze_wrapper .puzze_3:after, body html .puzze_wrapper .puzze_4:after, html .puzze_wrapper body .puzze_4:after, body .puzze_wrapper .puzze_4:after, html .puzze:before, html .puzze_wrapper .puzze_1:before, html body .puzze_wrapper .puzze_1:before, body .puzze_wrapper html .puzze_1:before, html .puzze_wrapper .puzze_2:before, html body .puzze_wrapper .puzze_2:before, body .puzze_wrapper html .puzze_2:before, html .puzze_wrapper .puzze_3:before, html body .puzze_wrapper .puzze_3:before, body .puzze_wrapper html .puzze_3:before, html .puzze_wrapper .puzze_4:before, html body .puzze_wrapper .puzze_4:before, body .puzze_wrapper html .puzze_4:before, body .puzze:before, body html .puzze_wrapper .puzze_1:before, html .puzze_wrapper body .puzze_1:before, body .puzze_wrapper .puzze_1:before, body html .puzze_wrapper .puzze_2:before, html .puzze_wrapper body .puzze_2:before, body .puzze_wrapper .puzze_2:before, body html .puzze_wrapper .puzze_3:before, html .puzze_wrapper body .puzze_3:before, body .puzze_wrapper .puzze_3:before, body html .puzze_wrapper .puzze_4:before, html .puzze_wrapper body .puzze_4:before, body .puzze_wrapper .puzze_4:before {
   content: '';
   position: absolute;
   height: 50px;
@@ -705,17 +705,17 @@ html .puzzle:after, html .puzzle_wrapper .puzzle_1:after, html body .puzzle_wrap
   transition: all 0.3s ease;
 }
 
-html .puzzle_wrapper, body .puzzle_wrapper {
+html .puzze_wrapper, body .puzze_wrapper {
   height: 450px;
   width: 450px;
   position: relative;
   margin: 100px auto;
 }
-html .puzzle_wrapper:before, body .puzzle_wrapper:before, html .puzzle_wrapper:after, body .puzzle_wrapper:after {
+html .puzze_wrapper:before, body .puzze_wrapper:before, html .puzze_wrapper:after, body .puzze_wrapper:after {
     content: '';
     position: absolute;
     height: 100%;
-    width: 105%;
+    width: 75%;
     background: url("/images/logo-assoc.png");
     background-position: center;
     background-size: cover;
@@ -726,7 +726,7 @@ html .puzzle_wrapper:before, body .puzzle_wrapper:before, html .puzzle_wrapper:a
     border-radius: 20px 0px 20px 20px;
     box-shadow: 5px 5px 20px -5px #333;
 }
-html .puzzle_wrapper:hover, body .puzzle_wrapper:hover {
+html .puzze_wrapper:hover, body .puzze_wrapper:hover {
     cursor: pointer;
     animation: circle 0.3s ease-in 0.3s 1;
 }
